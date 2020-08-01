@@ -12,7 +12,6 @@ client.on("ready", () => {
     client.user.setActivity("github.com/TheFerryn", { type: "WATCHING" })
 })
 client.on("guildMemberAdd", async (member) => {
-    if(member.id !== "474924761697484810") return;
     Canvas.registerFont(`fonts/BadScript-Regular.ttf`, { family: "BadScript" })
     let captcha = Math.random().toString(36).slice(2, 8)
     let canvas = Canvas.createCanvas(170, 50)
